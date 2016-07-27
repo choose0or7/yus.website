@@ -1,6 +1,35 @@
 ---
 layout: default
 ---
+<div class="main-nav clearfix">
+  <!-- navbar -->
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#NavCol">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand bg-primary" href="#about">Yu Shengbo</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="NavCol">
+        <ul class="nav navbar-nav navbar-right">
+
+          <li class="current"><a href="/" class="linear">Home</a></li>
+          <li><a href="#aboutMore" class="linear">About</a></li>
+          <li><a href="#work" class="linear">Work</a></li>
+          <li><a href="#blog" class="linear">Blog</a></li>
+          <li><a href="#contact" class="linear">Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</div>
 
 <!-- Full Page Image Header Area -->
 <div id="about" class="header">
@@ -122,7 +151,7 @@ layout: default
     <div class="row">
       <div class="col-md-10  col-md-offset-1">
         <div class="build title-page">
-          <h2 class="text-center">LATEST WORK</h2>
+          <h2 class="text-center">Latest Work</h2>
           <div class="line-title bg-primary"></div>
         </div>
       </div><!-- end col -->
@@ -275,16 +304,6 @@ layout: default
           </div>
 
         </div>
-
-        <ul>
-          {% for post in site.posts %}
-          <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-
-
       </div><!-- end folio content -->
     </div><!-- end col -->
   </div><!--end container-->
@@ -293,13 +312,37 @@ layout: default
 </div>
 <!-- /Portfolio -->
 
+<!--blogs-->
+<div id="blog" class="page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10  col-md-offset-1">
+        <div class="build title-page">
+          <h2 class="text-center">Blog</h2>
+          <div class="line-title bg-primary"></div>
+        </div>
+      </div><!-- end col -->
+    </div><!-- end row -->
+    <ul>
+      {% for post in site.posts limit:8 %}
+        <li>
+          {{ post.date | date: "%b %d, %Y"  }} &mdash; <a href="{{ post.url }}">{{ post.title }}</a>
+          <br/>&nbsp;&nbsp;&nbsp;&nbsp; {{ post.excerpt | strip_html }}...
+        </li>
+      {% endfor %}
+      <li><a href="#blog">More..</a></li>
+    </ul>
+  </div><!-- end container -->
+</div>
+<!--blogs-->
+
 <!--contact-->
 <div id="contact" class="page page-bgcolor">
   <div class="container">
     <div class="row">
       <div class="col-md-10  col-md-offset-1">
         <div class="build title-page">
-          <h2 class="text-center">GET IN TOUCH</h2>
+          <h2 class="text-center">Get in Touch</h2>
           <div class="line-title bg-primary"></div>
         </div>
       </div><!-- end col -->
