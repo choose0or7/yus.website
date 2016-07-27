@@ -31,6 +31,9 @@
 
 <body>
   <div id="boxWrapp" class="keepWrapFullHeight">
+
+    <!-- display the one page nav only in the homepage -->
+    {% unless page.title %}
     <div class="main-nav clearfix">
       <!-- navbar -->
       <nav class="navbar navbar-inverse" role="navigation">
@@ -54,14 +57,12 @@
               <li><a href="#aboutMore" class="linear">About</a></li>
               <li><a href="#work" class="linear">Work</a></li>
               <li><a href="#contact" class="linear">Contact</a></li>
-              <li><a href="/Theme Documentation/index.html" class="linear">Theme doc</a></li>
             </ul>
-
-
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
     </div>
+    {% endunless %}
 
     {{ content }}
 
