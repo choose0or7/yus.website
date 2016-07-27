@@ -3,12 +3,12 @@ layout: post
 title: my first article
 date: '2016-07-27 06:25'
 ---
-
-## Hello world!
+---
+#### Hello world!
 
 <address@example.com>
 
-# My first blog article and an note for Markdown
+#### My first blog article and an note for Markdown
 
 Am i looking ok?
 

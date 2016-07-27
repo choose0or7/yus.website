@@ -10,3 +10,14 @@
   position: relative;
   min-height: 100%;
 }
+
+#post info {
+  display:inline-block;
+  /*xbackground:#DDF5EB;
+  xborder-left:2px solid rgba(0,0,0,0.2);*/
+  border:1px solid rgba(0,0,0,0.05);
+  border-left:none; border-right:none;
+  padding:8px 0px 8px 60px;
+  margin-left:-60px;
+  margin-bottom:3em;
+}
