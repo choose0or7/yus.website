@@ -11,7 +11,11 @@
   min-height: 100%;
 }
 
-#post info {
+.post {
+  padding: 40px 0 120px 0;
+}
+
+div.post info {
   display:inline-block;
   /*xbackground:#DDF5EB;
   xborder-left:2px solid rgba(0,0,0,0.2);*/
