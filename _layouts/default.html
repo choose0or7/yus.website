@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="Yu Shengbo"/>
+  <meta name="keywords" content="Yu Shengbo, 郁盛波, Yu's Site, yus, choose0or7, IT consultant, Tokyo"/>
+  {% if page.title %}
+    <meta property="og:title" content="{{ page.title }}"/>
+    <meta name="twitter:title" content="{{ page.title }}">
+    {% if page.description %}
+      <meta name="description" content="{{ page.description }}"/>
+      <meta property="og:description" content="{{ page.description }}"/>
+      <meta name="twitter:description" content="{{ page.description }}">
+    {% else if content %}
+      <meta name="description" content="{{ content | strip_html | truncatewords: 25 }}"/>
+      <meta property="og:description" content="{{ content | strip_html | truncatewords: 25 }}"/>
+      <meta name="twitter:description" content="{{ content | strip_html | truncatewords: 25 }}">
+    {% endif %}
+  {% else %}
+    <meta name="description" content="Ramblings by Yu Shengbo -- a Chinese software engineer with a passion for solving problems with clarity, simplicity & honestly."/>
+    <meta name="twitter:description" content="Ramblings by Yu Shengbo -- a Chinese software engineer with a passion for solving problems with clarity, simplicity & honestly.">
+    <meta name="twitter:title" content="Yu's Site">
+  {% endif %}
+  {% if page.og_image_url %}
+    <meta property="og:image" content="{{ page.og_image_url }}">
+    <meta name="twitter:image:src" content="{{ page.og_image_url }}">
+  {% else %}
+    {% if page.photo_url %}
+      <meta property="og:image" content="{{ page.photo_url }}">
+      <meta name="twitter:image:src" content="{{ page.photo_url }}">
+    {% else %}
+      <meta property="og:image" content="http://yus.website/img/logomakr_bg.png">
+      <meta name="twitter:image:src" content="http://yus.website/img/logomakr_bg.png">
+    {% endif %}
+  {% endif %}
+  <meta property="og:url" content="http://yus.website{{ page.url | remove_first:'index.html' }}">
+  <meta property="og:site_name" content="yus.website">
+  <meta name="twitter:domain" content="yus.website>
+  <meta property="og:type" content="article">
+  <meta property="fb:app_id" content="1048034245291551">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@choose0or7">
+  <meta name="twitter:creator" content="@choose0or7">
 
-  <title>Yus - Personal Page</title>
+  <title>{% if page.title %}{{ page.title }} | {% endif %}Yu's Site</title>
 
   <!-- Bootstrap core CSS -->
   <link href="/css/bootstrap.min.css" rel="stylesheet"/>
@@ -30,6 +67,26 @@
 </head>
 
 <body>
+
+  <!-- Facebook jdk -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '1048034245291551',
+        xfbml      : true,
+        version    : 'v2.7'
+      });
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+
   <div id="boxWrapp" class="keepWrapFullHeight">
 
     {{ content }}
