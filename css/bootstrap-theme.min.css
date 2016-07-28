@@ -17,3 +17,7 @@ border-color:#f24971;
 .color-primary, ul#filterOptions li.cur a, ul#filterOptions li a:hover, .link-attr a:hover{
 color: #f24971;
 }
+
+a.post-excerpt:hover {
+  background-color:rgba(242, 73, 113, 0.5);
+}
