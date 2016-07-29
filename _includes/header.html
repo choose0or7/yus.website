@@ -1,0 +1,29 @@
+<div class="main-nav {% if page.title %} not-hide {% endif %} clearfix">
+  <!-- navbar -->
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#NavCol">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand bg-primary" href="/">Yu Shengbo</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="NavCol">
+        <ul class="nav navbar-nav navbar-right">
+
+          <!-- <li class="current"><a href="/" class="linear">Home</a></li> -->
+          <li class="{% if page.title == 'Blog' %} current {% endif %}"><a href="/blog" class="linear">Blog</a></li>
+          <li class="{% if page.title == 'Archive' %} current {% endif %}"><a href="/archive" class="linear">Archive</a></li>
+          <li class="{% if page.title == 'AboutMe' %} current {% endif %}"><a href="/aboutMe" class="linear">About me</a></li>
+          <!-- <li><a href="#contact" class="linear">Contact</a></li> -->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</div>

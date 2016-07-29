@@ -1,35 +1,6 @@
 ---
 layout: default
 ---
-<div class="main-nav clearfix">
-  <!-- navbar -->
-  <nav class="navbar navbar-inverse" role="navigation">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#NavCol">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand bg-primary" href="#about">Yu Shengbo</a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="NavCol">
-        <ul class="nav navbar-nav navbar-right">
-
-          <li class="current"><a href="/" class="linear">Home</a></li>
-          <li><a href="#aboutMore" class="linear">About</a></li>
-          <li><a href="#work" class="linear">Work</a></li>
-          <li><a href="#blog" class="linear">Blog</a></li>
-          <li><a href="#contact" class="linear">Contact</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-</div>
 
 <!-- Full Page Image Header Area -->
 <div id="about" class="header">
@@ -312,33 +283,6 @@ layout: default
 </div>
 <!-- /Portfolio -->
 
-<!--blogs-->
-<div id="blog" class="page">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-10  col-md-offset-1">
-        <div class="build title-page">
-          <h2 class="text-center">Blog</h2>
-          <div class="line-title bg-primary"></div>
-        </div>
-      </div><!-- end col -->
-    </div><!-- end row -->
-    <!-- <div class="posts">
-      <ul>
-        {% for post in site.posts limit:8 %}
-          <li class="title">
-            {{ post.date | date: "%b %d, %Y"  }} &mdash; <a href="{{ post.url }}">{{ post.title }}</a>
-            <br/>&nbsp;&nbsp;&nbsp;&nbsp; {{ post.excerpt | strip_html }}...
-          </li>
-        {% endfor %}
-      </ul>
-      <div class="more"><a href="/archive">More..</a></div>
-    </div> -->
-    {% include list.html %}
-  </div><!-- end container -->
-</div>
-<!--blogs-->
-
 <!--contact-->
 <div id="contact" class="page page-bgcolor">
   <div class="container">
@@ -361,19 +305,20 @@ layout: default
         <div class="build contact clearfix text-center">
           <span class="fa fa-map-marker"></span><br/>
           <!-- <p>JR Ebisu Bldg.11F, 1-5-5 Ebisu Minami, <br/>Shibuya-ku, Tokyo 150-0022 Japan</p> -->
-          <script type="text/javascript" src="//rf.revolvermaps.com/0/0/7.js?i=5jyzibgfanb&amp;m=1c&amp;c=f24971&amp;cr1=ffffff&amp;br=2&amp;sx=0&amp;dds=0&amp;ds=60&amp;cw=ffffff&amp;cb=000000" async="async"></script>
+          <!-- <script type="text/javascript" src="//rf.revolvermaps.com/0/0/7.js?i=5jyzibgfanb&amp;m=1c&amp;c=f24971&amp;cr1=ffffff&amp;br=2&amp;sx=0&amp;dds=0&amp;ds=60&amp;cw=ffffff&amp;cb=000000" async="async"></script> -->
+          
         </div>
       </div><!-- end col -->
       <!-- <div class="col-md-4 ">
-        <div class="build contact clearfix text-center">
-          <span class="fa fa-phone"></span>
-          <p>tel.<a href="tel:+81354886002">+81 3 5488 6002</a></p>
-          <p>mob.<a href="tel:+81354886020">+81 3 5488 6020</a></p>
+      <div class="build contact clearfix text-center">
+      <span class="fa fa-phone"></span>
+      <p>tel.<a href="tel:+81354886002">+81 3 5488 6002</a></p>
+      <p>mob.<a href="tel:+81354886020">+81 3 5488 6020</a></p>
 
-        </div>
-      </div> -->
-    </div><!-- end row -->
+    </div>
+  </div> -->
+</div><!-- end row -->
 
-  </div><!-- end container -->
+</div><!-- end container -->
 </div>
 <!--contact-->

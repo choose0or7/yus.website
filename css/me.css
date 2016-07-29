@@ -26,6 +26,10 @@ div.page-content info {
   margin-bottom:3em;
 }
 
+div.main-nav.not-hide {
+  display: block;
+}
+
 
 .posts {
   margin-right: auto;
