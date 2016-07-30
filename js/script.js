@@ -131,14 +131,14 @@ function lightboxPhoto() {
 function navScroll(){
 
 var top = $(window).scrollTop();
-//
-// if (top > 3) {
-// $('.main-nav').fadeIn();
-//
-// }else {
-//
-// $('.main-nav').fadeOut();
-// }
+
+if (top > 3) {
+$('.main-nav').fadeIn();
+
+}else {
+
+$('.main-nav').fadeOut();
+}
 
 }
 //=========================comment out for the scrolldown fadein ========================================

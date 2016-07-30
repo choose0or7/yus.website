@@ -28,6 +28,7 @@ div.page-content info {
 
 div.main-nav.not-hide {
   display: block;
+  position: absolute;
 }
 
 
