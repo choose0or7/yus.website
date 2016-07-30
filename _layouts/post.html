@@ -1,9 +1,10 @@
 ---
 layout: default
 ---
+
 <div class="page-content">
   <div class="content{% if page.photo_url %} photo-post{% endif %}">
-    <div class="/*container*/">
+    <div class="container">
       {% unless page.title_hidden %}
         <h1>
           {% if page.bias %}
@@ -22,7 +23,9 @@ layout: default
         data-width="450"
         data-show-faces="true">
       </div> -->
-      {{ content }}
-    </div>
+      <div class="post-body">
+        {{ content }}
+      </div>
+      </div>
   </div>
 </div>

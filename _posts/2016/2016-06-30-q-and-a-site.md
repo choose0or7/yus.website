@@ -1,16 +1,13 @@
 ---
 layout: "post"
 title: "Q and A site"
-date: "2016-06-30 18:46"
-bias: "Q&A site integrated to salesforce based on Knowledge"
+date: "2016-07-25 18:46"
+bias: "FAQ page based on Salesforce Knowledge"
 tags: work
 ---
 
-fejuoi sfjeij usi siiisu ss jj ssu nbvd eieu lssef ufeju. sjfieu su jnv nvbm, ieuuun slso sos is.fejuoi sfjeij usi siiisu ss jj ssu nbvd eieu lssef ufeju. sjfieu su jnv nvbm, ieuuun slso sos is.fejuoi sfjeij usi siiisu ss jj ssu nbvd eieu lssef ufeju. sjfieu su jnv nvbm, ieuuun slso sos is.fejuoi sfjeij usi siiisu ss jj ssu nbvd eieu lssef ufeju. sjfieu su jnv nvbm, ieuuun slso sos is.fejuoi sfjeij usi siiisu ss jj ssu nbvd eieu lssef ufeju. sjfieu su jnv nvbm, ieuuun slso sos is.
+FAQ page via salesforce public web site where customers can access to our client company's public salesforce knowledge base.
 
-fejuoi sfjeij usi siiisu ss jj ssu nbvd eieu lssef ufeju. sjfieu su jnv nvbm, ieuuun slso sos is.fejuoi sfjeij usi siiisu ss jj ssu nbvd eieu lssef ufeju. sjfieu su jnv nvbm, ieuuun slso sos is.fejuoi sfjeij usi siiisu ss jj ssu nbvd eieu lssef ufeju. sjfieu su jnv nvbm, ieuuun slso sos is.
-
-fejuoi sfjeij usi siiisu ss jj ssu nbvd eieu lssef ufeju. sjfieu su jnv nvbm, ieuuun slso sos is.fejuoi sfjeij usi siiisu ss jj ssu nbvd eieu lssef ufeju. sjfieu su jnv nvbm, ieuuun slso sos is.fejuoi sfjeij usi siiisu ss jj ssu nbvd eieu lssef ufeju. sjfieu su jnv nvbm, ieuuun slso sos is.
-
-
-fejuoi sfjeij usi siiisu ss jj ssu nbvd eieu lssef ufeju. sjfieu su jnv nvbm, ieuuun slso sos is.
+* Multi-language support
+* Conformity with CSS style of our client company's official website
+* Optimized for SEO

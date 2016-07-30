@@ -65,3 +65,16 @@ div.posts div.more {
 div.posts li.title {
   font-size: 16px;
 }
+
+div.post-body {
+  /*color:#222;*/
+  font-size: 16px;
+  line-height:1.625;
+  font-weight: 300;
+  margin: 0 auto;
+  width: 100%;
+  /*zoom:0.8;*/
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
