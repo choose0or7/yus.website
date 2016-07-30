@@ -1,0 +1,26 @@
+
+<ul class="timeline">
+  {% for post in site.tags.work limit:50 %}
+    <li class="{% cycle '', 'timeline-inverted' %}">
+      <div class="timeline-badge">
+        <a><i class="fa fa-circle {% cycle '', 'invert' %}" id=""></i></a>
+      </div>
+      <div class="timeline-panel">
+          <div class="timeline-heading">
+              <h4><a href="{{ post.url }}">{% include bias.html %}</a></h4>
+          </div>
+          <div class="timeline-body">
+            {% if post.description %}
+              <p>{{ post.description | markdownify }}</p>
+            {% else %}
+              <p>{{ post.excerpt | strip_html | truncatewords: 100 }}</p>
+            {% endif %}
+          </div>
+          <div class="timeline-footer">
+              <p class="text-right">{{ post.date | date: "%b %Y" }}</p>
+          </div>
+      </div>
+    </li>
+  {% endfor %}
+  <li class="clearfix no-float"></li>
+</ul>

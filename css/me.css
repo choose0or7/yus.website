@@ -31,6 +31,9 @@ div.main-nav.not-hide {
   position: absolute;
 }
 
+div.main-nav {
+  z-index: 200;
+}
 
 .posts {
   margin-right: auto;
