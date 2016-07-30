@@ -43,7 +43,17 @@
   <meta name="twitter:site" content="@choose0or7">
   <meta name="twitter:creator" content="@choose0or7">
 
-  <title>{% if page.title %}{{ page.title }} | {% endif %}Yu's Site</title>
+  <title>
+    {% if page.bias %}
+      {{ page.bias }}
+    {% else %}
+      {% if page.title %}
+        {{ page.title }}
+      {% else %}
+        Yu's website
+      {% endif %}
+    {% endif %}
+  </title>
 
   <!-- Bootstrap core CSS -->
   <link href="/css/bootstrap.min.css" rel="stylesheet"/>
