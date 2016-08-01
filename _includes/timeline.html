@@ -1,6 +1,6 @@
 
 <ul class="timeline">
-  {% for post in site.tags.work limit:50 %}
+  {% for post in site.categories.work limit:50 %}
     <li class="{% cycle '', 'timeline-inverted' %}">
       <div class="timeline-badge">
         <a><i class="fa fa-circle {% cycle '', 'invert' %}" id=""></i></a>
