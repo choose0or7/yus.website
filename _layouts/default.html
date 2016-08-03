@@ -18,8 +18,10 @@
       <meta name="twitter:description" content="{{ content | strip_html | truncatewords: 25 }}">
     {% endif %}
   {% else %}
-    <meta name="description" content="Ramblings by Yu Shengbo -- a Chinese software engineer with a passion for solving problems with clarity, simplicity & honestly."/>
-    <meta name="twitter:description" content="Ramblings by Yu Shengbo -- a Chinese software engineer with a passion for solving problems with clarity, simplicity & honestly.">
+    <meta property="og:title" content="Yu's website"/>
+    <meta property="og:description" content="Ramblings by Yu Shengbo -- a software engineer with a passion for solving problems with clarity, simplicity & honestly."/>
+    <meta name="description" content="Ramblings by Yu Shengbo -- a software engineer with a passion for solving problems with clarity, simplicity & honestly."/>
+    <meta name="twitter:description" content="Ramblings by Yu Shengbo -- a software engineer with a passion for solving problems with clarity, simplicity & honestly.">
     <meta name="twitter:title" content="Yu's Site">
   {% endif %}
   {% if page.og_image_url %}
@@ -48,7 +50,7 @@
       {{ page.bias }} |
     {% else %}
       {% if page.title %}
-        {{ page.title }} | 
+        {{ page.title }} |
       {% endif %}
     {% endif %}Yu's website
   </title>
@@ -88,25 +90,6 @@
 
   </script>
 
-  <!-- Facebook jdk -->
-  <!-- <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId      : '1048034245291551',
-        xfbml      : true,
-        version    : 'v2.7'
-      });
-    };
-
-    (function(d, s, id){
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) {return;}
-       js = d.createElement(s); js.id = id;
-       js.src = "//connect.facebook.net/en_US/sdk.js";
-       fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));
-  </script> -->
-
   <div id="boxWrapp" class="keepWrapFullHeight">
 
     {% include header.html %}
@@ -131,8 +114,7 @@
       <script src="/js/script.js"></script>
     {% endunless %}
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script>
-    <script src="/js/windowScroll.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"></script> -->
     <!-- results pane console output; see http://meta.stackexchange.com/a/242491 -->
     <!-- <script src="http://gh-canon.github.io/stack-snippet-console/console.min.js"></script> -->
     <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
