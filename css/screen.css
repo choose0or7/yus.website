@@ -41,7 +41,7 @@ div.content.photo {
     /*font-family: 'Poly', georgia;*/
     font-style:italic;
     line-height:1.618;
-    background:transparent url(quotation-mark.png) no-repeat scroll 25px 1.4em;
+    background:transparent url(/img/quotation-mark.png) no-repeat scroll 25px 1.4em;
     padding:0.1em 1em 0.1em 60px;
     margin:1.618em 0 1.618em -60px;
     color: #666055;
